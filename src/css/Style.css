@@ -1,0 +1,84 @@
+*{
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+h2, p{
+    text-align: center;
+}
+
+h2{
+    margin: 15px;
+    color: #0C326F;
+}
+
+p{
+    margin: 10px;
+    color: #55555A;
+}
+
+.container{
+    width: 1200px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 25px;
+}
+
+.card{
+    height: 175px;
+    width: calc(25% - 25px);
+    font-weight: bold;
+    padding: 75px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 1px rgba(0, 2, 14, 0.2);
+}
+
+.card a:link, .card a:active, .card a:visited{
+    text-decoration: none;
+    color: #0C326F;
+}
+
+.card:hover{
+    background-color: #D9E3F3;
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px) {
+    .container{
+        width: 100%;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width: 1000px) {
+    .container{
+        width: 100%;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 50%;
+    }
+}
